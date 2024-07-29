@@ -1,4 +1,4 @@
-package com.revature.nutrition.models;
+package com.revature.models;
 
 import jakarta.persistence.*;
 

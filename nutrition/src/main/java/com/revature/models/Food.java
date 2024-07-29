@@ -1,8 +1,9 @@
-package com.revature.nutrition.models;
+package com.revature.models;
 
 import jakarta.persistence.*;
 
-@Entity@Table(name = "foods")
+@Entity
+@Table(name = "foods")
 public class Food {
 
     @Id //makes this a Primary Key

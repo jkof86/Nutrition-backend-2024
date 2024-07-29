@@ -1,6 +1,6 @@
-package com.revature.nutrition.repositories;
+package com.revature.repositories;
 
-import com.revature.nutrition.models.Account;
+import com.revature.models.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

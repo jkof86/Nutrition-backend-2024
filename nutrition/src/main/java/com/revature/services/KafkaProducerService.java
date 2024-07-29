@@ -1,4 +1,4 @@
-package com.revature.nutrition.services;
+package com.revature.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;

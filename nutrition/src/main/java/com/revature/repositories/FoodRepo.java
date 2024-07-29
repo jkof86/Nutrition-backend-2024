@@ -1,8 +1,8 @@
-package com.revature.nutrition.repositories;
+package com.revature.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.revature.nutrition.models.Food;
+import com.revature.models.Food;
 
 @Repository
 public interface FoodRepo extends JpaRepository<Food,Integer> {
