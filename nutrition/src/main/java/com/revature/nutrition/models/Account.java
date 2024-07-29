@@ -1,10 +1,18 @@
-package com.revature.model;
+package com.revature.nutrition.models;
+
+import jakarta.persistence.*;
 
 import java.util.Scanner;
 
+@Entity
+@Table(name = "accounts")
 public class Account {
 
+    @Id //makes this a Primary Key
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "a_id", updatable = false)
     private int id;
+
     private String fname;
     private  String lname;
     private String pw;

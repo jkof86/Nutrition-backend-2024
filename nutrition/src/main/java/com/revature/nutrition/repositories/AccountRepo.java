@@ -1,5 +1,10 @@
 package com.revature.nutrition.repositories;
 
-public interface AccountRepo {
+import com.revature.nutrition.models.Account;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AccountRepo extends JpaRepository<Account,Integer> {
 
 }

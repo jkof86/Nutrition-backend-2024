@@ -1,13 +1,8 @@
-package com.revature.service;
+package com.revature.nutrition.services;
 
-import com.revature.model.Food;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
-
+@Service
 public interface FoodService {
-    public Food addFood(Food f);
-    public boolean removeFood(int id);
-    public Food getFood(int id);
-    public Food updateFood(Food f);
-    public List<Food> getAllFood();
+
 }

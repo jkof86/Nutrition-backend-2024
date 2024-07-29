@@ -1,10 +1,14 @@
-package com.revature.model;
+package com.revature.nutrition.models;
 
+import jakarta.persistence.*;
+
+@Entity@Table(name = "foods")
 public class Food {
 
+    @Id //makes this a Primary Key
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "f_id", updatable = false)
     private int id;
-    private String fname;
-    private  String lname;
 
     private String name;
 
@@ -35,15 +39,14 @@ public class Food {
     //constructors
     public Food(){}
 
-    public Food(int id, String name, String fname, String lname) {
+    public Food(int id, String name) {
         this.id = id;
-        this.fname = fname;
-        this.lname = lname;
+        this.name = name;
     }
 
-    public Food(int id,String lname, int quantity, int calories, float protein, float carbs, float fat) {
+    public Food(int id,String name, int quantity, int calories, float protein, float carbs, float fat) {
         this.id = id;
-        this.lname = lname;
+        this.name = name;
         this.quantity = quantity;
         this.calories = calories;
         this.protein = protein;
@@ -209,11 +212,4 @@ public class Food {
         this.id = id;
     }
 
-    public String getLname() {
-        return lname;
-    }
-
-    public void setLname(String lname) {
-        this.lname = lname;
-    }
 }
